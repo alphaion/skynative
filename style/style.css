@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Regular";
+  src: url(../resources/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "bold";
+  src: url(../resources/fonts/Montserrat-Bold.ttf);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,6 +19,76 @@ body {
 #wrap {
   width: 100%;
   margin: 0 auto;
+}
+
+.bg-blur {
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+/* Custom Loader */
+.spinner-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #14213D;
+  z-index: 999999;
+}
+
+.spinner {
+  position: absolute;
+  top: 48%;
+  left: 48%;
+  width: 70px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #EDEFFF;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
 nav {
@@ -152,7 +232,152 @@ nav {
 }
 
 #wrapper {
-  width: 1150px;
+  max-width: 1150px;
+  width: 100%;
   margin: 0 auto;
+}
+
+.home-section {
+  margin-top: 6em;
+}
+
+.home-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0em;
+}
+
+.header-img {
+  padding: 2em;
+}
+
+.square {
+  width: 120px;
+  height: 120px;
+  border: 5px solid #EDEFFF;
+  margin: -60px -20px;
+}
+
+.home-img-1 {
+  width: 280px;
+  height: 380px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  margin: -12px 20px;
+}
+
+.home-img-2 {
+  width: 200px;
+  height: 160px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: -4em -8em;
+}
+
+.matter {
+  margin-left: 15em;
+  width: 40em;
+}
+
+.matter .text {
+  font-family: "bold";
+  color: #EDEFFF;
+  font-size: 3.4rem;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3em 0em 0em 0em;
+  font-family: "Regular";
+}
+
+.btn .project-btn {
+  padding: 0.6em 2.4em 0.6em 2.4em;
+  border: 2px solid #3D44FF;
+  margin-right: 2em;
+}
+
+.project-btn a {
+  color: #EDEFFF;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.btn .contact-btn {
+  padding: 0.6em 2.4em 0.6em 2.4em;
+  background-color: #3D44FF;
+}
+
+.contact-btn a {
+  color: #EDEFFF;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 1150px) {
+  .home-header {
+    display: block;
+    width: 100%;
+    margin: 10em auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .header-img {
+    padding: 0em 8em;
+    margin: 0 auto;
+  }
+  .square {
+    margin: -4em auto;
+  }
+  .home-img-1 {
+    margin: 0 auto;
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .matter {
+    margin: 8em auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 100%;
+    width: 50em;
+  }
+  .matter .text {
+    font-size: 3em;
+  }
+  .matter .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .btn .project-btn {
+    margin-right: 0em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

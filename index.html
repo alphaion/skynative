@@ -10,10 +10,23 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="./style/style.css">
 
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <div id="wrap">
+
+        <!-- Loader -->
+        <div class="spinner-wrapper">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
 
         <!-- Navigation Bar -->
         <nav>
@@ -45,11 +58,33 @@
 
         <div id="wrapper">
             <!-- Website code goes here -->
+            <div class="home-section">
+                <div class="home-header">
+                    <div class="header-img">
+                        <div class="square"></div>
+                        <img class="home-img-1" src="./resources/images/home-img-1.jpg" alt="man using laptop">
+                        <img class="home-img-2" src="./resources/images/home-img-2.jpg" alt="text line picture">
+                    </div>
+                    <div class="matter">
+                        <div class="text">Launch your business ideas & projects with us.</div>
+                        <div class="btn">
+                            <div class="project-btn">
+                                <a href="#projects">Projects</a>
+                            </div>
+                            <div class="contact-btn">
+                                <a href="#contact">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
 
+    <!-- Script file -->
     <script src="./script/script.js"></script>
+
 </body>
 
 </html>
