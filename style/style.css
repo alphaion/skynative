@@ -17,8 +17,7 @@
 body {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  height: 100vh;
   background-color: #1D3557;
 }
 
@@ -322,6 +321,7 @@ nav {
   display: flex;
   margin: 3em 0em 0em 0em;
   font-family: "Regular";
+  cursor: pointer;
 }
 
 .btn .project-btn {
@@ -397,7 +397,6 @@ nav {
   color: #EDEFFF;
   font-size: 18px;
   font-family: "regular";
-  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

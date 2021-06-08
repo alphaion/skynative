@@ -26,7 +26,7 @@ $shadow: darken($text-area-bg, 1%);
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    height: 100vh;
     background-color: $bg-col;
 }
 
@@ -288,6 +288,7 @@ nav {
     display: flex;
     margin: 3em 0em 0em 0em;
     font-family: "Regular";
+    cursor: pointer;
 }
 
 .btn .project-btn {
@@ -353,7 +354,6 @@ nav {
     color: $font-col;
     font-size: 18px;
     font-family: "regular";
-    cursor: pointer;
     display: flex;
     align-items: flex-end;
     justify-content: center;
