@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     //Preloader
     preloaderFadeOutTime = 500;
@@ -15,7 +16,7 @@ const navSlide = () => {
 
     // Issue: when menuON bg blurred but with the navigation
     //const blurBg = document.querySelector("#wrapper");
-    
+
     const navLinks = document.querySelectorAll('.nav-links li');
 
     menu.addEventListener('click', () => {
@@ -36,4 +37,5 @@ const navSlide = () => {
         menu.classList.toggle('toggle');
     });
 }
+
 navSlide();
