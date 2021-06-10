@@ -31,8 +31,8 @@ body {
 }
 
 ::selection {
-    background-color: $primary;
-    color: $font-col;
+    background-color: $font-col;
+    color: $primary;
 }
 
 #wrap {
@@ -349,7 +349,7 @@ nav {
 .flex-items {
     margin: 3em;
     width: 140px;
-    height: 340px;
+    height: 180px;
     padding: 1.5em 3em;
     color: $font-col;
     font-size: 18px;
@@ -360,49 +360,42 @@ nav {
 }
 
 .sr-class-1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url(../resources/images/ahmad-nadzimuddin-mdgljJgqSEg-unsplash.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url(../resources/images/ui-design.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .sr-class-2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url(../resources/images/francesco-ungaro-hqAGgNsMpEY-unsplash.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url(../resources/images/graphic-design.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .sr-class-3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url(../resources/images/screen-post-BqN2QFHHD3o-unsplash.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url(../resources/images/web-dev.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .sr-class-4 {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url(../resources/images/pexels-oliver-sjöström-1074505.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url(../resources/images/seo.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .sr-class-5 {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url(../resources/images/pexels-guilherme-rossi-1755683.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url(../resources/images/sm-marketing.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .sr-class-6 {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url(../resources/images/pexels-mathias-pr-reding-4394232.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.sr-class-7 {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url(../resources/images/pexels-henda-watani-320014.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url(../resources/images/more.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -427,17 +420,21 @@ nav {
 }
 
 .pr-class-2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url(../resources/images/cat.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url(../resources/images/pyro.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.another-wrap{
+.text-name{
+    font-family: "bold";
+}
+.another-wrap {
     width: 100%;
     height: auto;
     background-color: $darken;
     margin-top: 15em;
 }
+
 .team-section {
     align-items: center;
     text-align: center;
@@ -504,14 +501,17 @@ nav {
     opacity: 1;
     visibility: visible;
 }
+
 .img-2:hover .pop-over {
     opacity: 1;
     visibility: visible;
 }
+
 .img-3:hover .pop-over {
     opacity: 1;
     visibility: visible;
 }
+
 .img-1 {
     background: url(../resources/images/man-1.jpg);
     background-position: center center;
@@ -531,6 +531,33 @@ nav {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.contact-section {
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    width: 1150px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.contact-title {
+    padding: 2em;
+}
+
+.sub-title {
+    font-family: "light";
+    font-size: 0.8em;
+    margin-top: 0.4em;
+}
+
+.form {
+    width: 700px;
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: 3em 0em;
 }
 
 @media only screen and (max-width: 1150px) {
