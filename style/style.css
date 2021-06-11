@@ -17,17 +17,18 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-color: #1D3557;
+  overflow-x: hidden;
+  background: #4A00E0;
 }
 
 ::-moz-selection {
-  background-color: #EDEFFF;
-  color: #3D44FF;
+  background-color: #ffffff;
+  color: #e000a8;
 }
 
 ::selection {
-  background-color: #EDEFFF;
-  color: #3D44FF;
+  background-color: #ffffff;
+  color: #e000a8;
 }
 
 #wrap {
@@ -50,7 +51,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #14213D;
+  background-color: #e000a8;
   z-index: 999999;
 }
 
@@ -65,7 +66,7 @@ body {
 .spinner > div {
   width: 18px;
   height: 18px;
-  background-color: #EDEFFF;
+  background-color: #ffffff;
   border-radius: 100%;
   display: inline-block;
   -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
@@ -116,11 +117,11 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   min-height: 8vh;
-  background-color: #1D3557;
 }
 
 .logo {
-  color: #EDEFFF;
+  color: #ffffff;
+  font-family: "bold";
   text-transform: uppercase;
   font-size: 20px;
 }
@@ -140,7 +141,8 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: #EDEFFF;
+  font-family: "regular";
+  color: #ffffff;
   letter-spacing: 3px;
   font-size: 14px;
 }
@@ -153,7 +155,7 @@ nav {
 .menu div {
   width: 30px;
   height: 3px;
-  background-color: #EDEFFF;
+  background-color: #ffffff;
   margin: 5px;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
@@ -174,7 +176,7 @@ nav {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #1D3557;
+    background-color: #4A00E0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -253,7 +255,7 @@ nav {
 }
 
 .home-section {
-  margin-top: 6em;
+  margin-top: 8em;
 }
 
 .home-header {
@@ -277,7 +279,7 @@ nav {
 .square {
   width: 120px;
   height: 120px;
-  border: 5px solid #EDEFFF;
+  border: 5px solid #fff;
   margin: -60px -20px;
 }
 
@@ -291,6 +293,8 @@ nav {
   -o-object-position: center;
      object-position: center;
   margin: -12px 20px;
+  -webkit-box-shadow: 0 5px 30px #4500d1;
+          box-shadow: 0 5px 30px #4500d1;
 }
 
 .home-img-2 {
@@ -301,6 +305,8 @@ nav {
   -o-object-fit: cover;
      object-fit: cover;
   margin: -4em -8em;
+  -webkit-box-shadow: 0 5px 30px #4500d1;
+          box-shadow: 0 5px 30px #4500d1;
 }
 
 .matter {
@@ -310,7 +316,7 @@ nav {
 
 .matter .text {
   font-family: "bold";
-  color: #EDEFFF;
+  color: #ffffff;
   font-size: 3.4rem;
 }
 
@@ -325,12 +331,12 @@ nav {
 
 .btn .project-btn {
   padding: 0.6em 2.4em 0.6em 2.4em;
-  border: 2px solid #3D44FF;
+  border: 2px solid #e000a8;
   margin-right: 2em;
 }
 
 .fourth {
-  background-image: linear-gradient(45deg, #3D44FF 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #e000a8 50%, transparent 50%);
   background-position: 100%;
   background-size: 400%;
   -webkit-transition: 600ms ease-in-out;
@@ -342,18 +348,18 @@ nav {
 }
 
 .project-btn a {
-  color: #EDEFFF;
+  color: #ffffff;
   text-decoration: none;
   font-size: 18px;
 }
 
 .btn .contact-btn {
   padding: 0.6em 2.4em 0.6em 2.4em;
-  background-color: #3D44FF;
+  background-color: #e000a8;
 }
 
 .contact-btn a {
-  color: #EDEFFF;
+  color: #ffffff;
   text-decoration: none;
   font-size: 18px;
 }
@@ -369,7 +375,7 @@ nav {
 .title {
   font-family: "bold";
   font-size: 2.5em;
-  color: #EDEFFF;
+  color: #ffffff;
 }
 
 .flexbox {
@@ -390,69 +396,25 @@ nav {
 
 .flex-items {
   margin: 3em;
-  width: 140px;
-  height: 180px;
+  width: 160px;
+  height: 60px;
+  background-color: #fff;
   padding: 1.5em 3em;
-  color: #EDEFFF;
+  color: #e000a8;
   font-size: 18px;
-  font-family: "regular";
+  font-family: "bold";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.sr-class-1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(black)), url(../resources/images/ui-design.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.4), black), url(../resources/images/ui-design.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.sr-class-2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(black)), url(../resources/images/graphic-design.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.4), black), url(../resources/images/graphic-design.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.sr-class-3 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(black)), url(../resources/images/web-dev.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.4), black), url(../resources/images/web-dev.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.sr-class-4 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(black)), url(../resources/images/seo.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.4), black), url(../resources/images/seo.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.sr-class-5 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(black)), url(../resources/images/sm-marketing.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.4), black), url(../resources/images/sm-marketing.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.sr-class-6 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(black)), url(../resources/images/more.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.4), black), url(../resources/images/more.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 5px 30px #4500d1;
+          box-shadow: 0 5px 30px #4500d1;
 }
 
 .project-section {
@@ -466,6 +428,21 @@ nav {
 .projects {
   width: 200px;
   height: 440px;
+  margin: 3em;
+  padding: 1.5em 3em;
+  color: #fff;
+  font-size: 18px;
+  font-family: "bold";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 4px;
 }
 
 .pr-class-1 {
@@ -491,7 +468,6 @@ nav {
 .another-wrap {
   width: 100%;
   height: auto;
-  background-color: #14213D;
   margin-top: 15em;
 }
 
@@ -529,19 +505,26 @@ nav {
   height: 120px;
   border-radius: 50%;
   margin: 3em;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .pop-over {
   padding: 0.6em 1em 0.6em 1em;
-  background-color: #3D44FF;
+  background-color: #e000a8;
   border-radius: 5px;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
   margin-top: 9.4em;
-  -webkit-box-shadow: 0px 6px 50px #19284a;
-          box-shadow: 0px 6px 50px #19284a;
+  -webkit-box-shadow: 0px 6px 50px #4500d1;
+          box-shadow: 0px 6px 50px #4500d1;
 }
 
 .pop-over:before {
@@ -549,7 +532,7 @@ nav {
   height: 0;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-bottom: 15px solid #3D44FF;
+  border-bottom: 15px solid #e000a8;
   content: " ";
   position: absolute;
   margin-top: -23px;
@@ -559,13 +542,13 @@ nav {
 .pop-over .pop-name {
   font-size: 18px;
   font-family: "bold";
-  color: #EDEFFF;
+  color: #ffffff;
 }
 
 .pop-over .pop-stat {
   font-size: 12px;
   font-family: "light";
-  color: #EDEFFF;
+  color: #ffffff;
 }
 
 .img-1:hover .pop-over {
@@ -611,26 +594,96 @@ nav {
   text-align: center;
   max-width: 100%;
   width: 1150px;
-  margin: 0 auto;
+  margin: 3em auto;
   padding: 1em;
 }
 
-.contact-title {
-  padding: 2em;
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3em;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.sub-title {
+.contact-title {
+  color: #ffffff;
+  text-align: left;
+  margin: 2em;
+}
+
+.contact-title .one {
+  font-size: 32px;
+  font-family: "bold";
+}
+
+.contact-title .two {
+  font-size: 24px;
   font-family: "light";
-  font-size: 0.8em;
-  margin-top: 0.4em;
 }
 
 .form {
-  width: 700px;
-  max-width: 80%;
-  height: auto;
-  margin: 0 auto;
-  padding: 3em 0em;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  text-align: left;
+}
+
+.user-name,
+.user-email,
+.user-msg,
+.send-btn {
+  margin: 2em;
+}
+
+label {
+  font-family: "regular";
+  font-size: 20px;
+  color: #ffffff;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1em;
+  outline: none;
+  border: 0;
+  background-color: #fff;
+  color: #372B47;
+  font-size: 16px;
+  font-family: "regular";
+  letter-spacing: 1px;
+  margin: 0.8em 0.5em 0em 0em;
+}
+
+.send-btn {
+  background-color: #e000a8;
+  padding: 0.8em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  text-align: center;
+  width: 110px;
+}
+
+.send-btn a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 750px) {
+  .container {
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media only screen and (max-width: 1150px) {

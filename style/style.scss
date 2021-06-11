@@ -15,24 +15,24 @@
 }
 
 // color palettes
-$primary: #3D44FF;
-$bg-col: #1D3557;
-$font-col: #EDEFFF;
-$darken: #14213D;
-$text-area-col: #26497B;
-$text-area-bg: #1A2A4E;
-$shadow: darken($text-area-bg, 1%);
+$primary: #4A00E0;
+$font-col: #ffffff;
+$accent: #e000a8;
+$sec: #372B47;
+$white: #fff;
+$darken: darken($primary, 3%);
 
 body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-color: $bg-col;
+    overflow-x: hidden;
+    background: $primary;
 }
 
 ::selection {
     background-color: $font-col;
-    color: $primary;
+    color: $accent;
 }
 
 #wrap {
@@ -54,7 +54,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: $darken;
+    background-color: $accent;
     z-index: 999999;
 }
 
@@ -121,11 +121,11 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: $bg-col;
 }
 
 .logo {
     color: $font-col;
+    font-family: "bold";
     text-transform: uppercase;
     font-size: 20px;
 }
@@ -142,6 +142,7 @@ nav {
 
 .nav-links a {
     text-decoration: none;
+    font-family: "regular";
     color: $font-col;
     letter-spacing: 3px;
     font-size: 14px;
@@ -176,7 +177,7 @@ nav {
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: $bg-col;
+        background-color: $primary;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -232,7 +233,8 @@ nav {
 
 // home-section
 .home-section {
-    margin-top: 6em;
+    margin-top: 8em;
+    
 }
 
 .home-header {
@@ -250,7 +252,7 @@ nav {
 .square {
     width: 120px;
     height: 120px;
-    border: 5px solid $font-col;
+    border: 5px solid $white;
     margin: -60px -20px;
 }
 
@@ -262,6 +264,7 @@ nav {
     object-fit: cover;
     object-position: center;
     margin: -12px 20px;
+    box-shadow: 0 5px 30px $darken;
 }
 
 .home-img-2 {
@@ -271,6 +274,7 @@ nav {
     background-repeat: no-repeat;
     object-fit: cover;
     margin: -4em -8em;
+    box-shadow: 0 5px 30px $darken;
 }
 
 .matter {
@@ -293,12 +297,12 @@ nav {
 
 .btn .project-btn {
     padding: 0.6em 2.4em 0.6em 2.4em;
-    border: 2px solid $primary;
+    border: 2px solid $accent;
     margin-right: 2em;
 }
 
 .fourth {
-    background-image: linear-gradient(45deg, $primary 50%, transparent 50%);
+    background-image: linear-gradient(45deg, $accent 50%, transparent 50%);
     background-position: 100%;
     background-size: 400%;
     transition: 600ms ease-in-out;
@@ -316,7 +320,7 @@ nav {
 
 .btn .contact-btn {
     padding: 0.6em 2.4em 0.6em 2.4em;
-    background-color: $primary;
+    background-color: $accent;
 }
 
 .contact-btn a {
@@ -348,57 +352,18 @@ nav {
 
 .flex-items {
     margin: 3em;
-    width: 140px;
-    height: 180px;
+    width: 160px;
+    height: 60px;
+    background-color: $white;
     padding: 1.5em 3em;
-    color: $font-col;
+    color: $accent;
     font-size: 18px;
-    font-family: "regular";
+    font-family: "bold";
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
-}
-
-.sr-class-1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url(../resources/images/ui-design.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.sr-class-2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url(../resources/images/graphic-design.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.sr-class-3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url(../resources/images/web-dev.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.sr-class-4 {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url(../resources/images/seo.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.sr-class-5 {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url(../resources/images/sm-marketing.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.sr-class-6 {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url(../resources/images/more.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    border-radius: 4px;
+    box-shadow: 0 5px 30px $darken;
 }
 
 .project-section {
@@ -410,8 +375,16 @@ nav {
 .projects {
     width: 200px;
     height: 440px;
+    margin: 3em;
+    padding: 1.5em 3em;
+    color: $white;
+    font-size: 18px;
+    font-family: "bold";
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 4px;
 }
-
 .pr-class-1 {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url(../resources/images/georgia-de-lotz-Ebb8fe-NZtM-unsplash.jpg);
     background-position: center center;
@@ -425,13 +398,15 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.text-name{
+
+.text-name {
     font-family: "bold";
 }
+
 .another-wrap {
     width: 100%;
     height: auto;
-    background-color: $darken;
+    // background-color: $darken;
     margin-top: 15em;
 }
 
@@ -460,17 +435,20 @@ nav {
     height: 120px;
     border-radius: 50%;
     margin: 3em;
+    transition: 400ms;
 }
-
+.img:hover{
+    transform: scale(1.2);
+}
 .pop-over {
     padding: 0.6em 1em 0.6em 1em;
-    background-color: $primary;
+    background-color: $accent;
     border-radius: 5px;
     opacity: 0;
     visibility: hidden;
     transition: all 200ms ease-in;
     margin-top: 9.4em;
-    box-shadow: 0px 6px 50px $shadow;
+    box-shadow: 0px 6px 50px $darken;
 }
 
 .pop-over:before {
@@ -478,7 +456,7 @@ nav {
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-bottom: 15px solid $primary;
+    border-bottom: 15px solid $accent;
     content: " ";
     position: absolute;
     margin-top: -23px;
@@ -538,26 +516,85 @@ nav {
     text-align: center;
     max-width: 100%;
     width: 1150px;
-    margin: 0 auto;
+    margin: 3em auto;
     padding: 1em;
+
+}
+
+.container {
+    display: flex;
+    padding: 3em;
+    justify-content: space-evenly;
+    // background-color: $text-area-bg;
+    flex-wrap: wrap;
 }
 
 .contact-title {
-    padding: 2em;
+    color: $font-col;
+    text-align: left;
+    margin: 2em;
 }
 
-.sub-title {
+.contact-title .one {
+    font-size: 32px;
+    font-family: "bold";
+}
+
+.contact-title .two {
+    font-size: 24px;
     font-family: "light";
-    font-size: 0.8em;
-    margin-top: 0.4em;
 }
 
 .form {
-    width: 700px;
-    max-width: 80%;
-    height: auto;
-    margin: 0 auto;
-    padding: 3em 0em;
+    align-items: left;
+    text-align: left;
+}
+
+.user-name,
+.user-email,
+.user-msg,
+.send-btn {
+    margin: 2em;
+}
+label{
+    font-family: "regular";
+    font-size: 20px;
+    color: $font-col;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 1em;
+    outline: none;
+    border: 0;
+    background-color: $white;
+    color: $sec;
+    font-size: 16px;
+    font-family: "regular";
+    letter-spacing: 1px;
+    margin: 0.8em 0.5em 0em 0em;
+}
+
+.send-btn {
+    background-color: $accent;
+    padding: 0.8em;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    width: 110px;
+}
+
+.send-btn a {
+    color: $font-col;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 750px) {
+    .container {
+        display: block;
+        align-items: center;
+    }
 }
 
 @media only screen and (max-width: 1150px) {

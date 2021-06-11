@@ -98,10 +98,10 @@
             <div class="project-section">
                 <div class="title">Our Popular Projects</div>
                 <div class="flexbox">
-                    <div class="flex-items pr-class-1 projects">
+                    <div class="pr-class-1 projects">
                         <div class="text-name">Medlab</div>
                     </div>
-                    <div class="flex-items pr-class-2 projects">
+                    <div class="pr-class-2 projects">
                         <div class="text-name">Pyro</div>
                     </div>
                 </div>
@@ -140,12 +140,27 @@
         </div>
 
         <div class="contact-section">
-            <div class="title contact-title">Got a project?
-                <div class="sub-title">Lets talk</div>
-            </div>
-
-            <div class="form">
-
+            <div class="container">
+                <div class="contact-title">
+                    <div class="one">Got a project? <br><div class="two">Lets talk!</div></div>
+                </div>
+                <div class="form">
+                    <div class="user-name">
+                        <label>Your name</label>
+                        <input type="text" placeholder="John Doe" required>
+                    </div>
+                    <div class="user-email">
+                        <label>Your fancy email</label>
+                        <input placeholder="johndoe@example.com" type="email" name="email" id="email" required spellcheck="false">
+                    </div>
+                    <div class="user-msg">
+                        <label>Your message</label>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Lets talk about your project idea!" required></textarea>
+                    </div>
+                    <div class="send-btn">
+                        <a href="#send">Send</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
