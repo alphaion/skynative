@@ -13,10 +13,13 @@
     <!-- Jquery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- AOS for animation -->
+    <link rel="stylesheet" href="./aos/node_modules/aos/dist/aos.css">
 
 </head>
 
 <body>
+
     <div id="wrap">
         <!-- Loader -->
 
@@ -62,14 +65,14 @@
             <!-- Home Section -->
             <div class="home-section">
                 <div class="home-header">
-                    <div class="header-img">
+                    <div class="header-img" data-aos="fade-up" data-aos-duration="2000">
                         <div class="square"></div>
                         <img class="home-img-1" src="./resources/images/home-img-1.jpg" alt="man using laptop">
                         <img class="home-img-2" src="./resources/images/home-img-2.jpg" alt="text line picture">
                     </div>
                     <div class="matter">
-                        <div class="text">Launch your business ideas & projects with us.</div>
-                        <div class="btn">
+                        <div class="text" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">Launch your business ideas & projects with us.</div>
+                        <div class="btn" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1200">
                             <div class="project-btn fourth">
                                 <a href="#projects">Projects</a>
                             </div>
@@ -83,25 +86,25 @@
 
             <!-- Service Section -->
             <div class="service-section">
-                <div class="title">Our Services</div>
+                <div class="title" data-aos="fade-up" data-aos-duration="2000">Our Services</div>
                 <div class="flexbox">
-                    <div class="flex-items sr-class-1 animation">UI Design</div>
-                    <div class="flex-items sr-class-2 animation">Graphic Design</div>
-                    <div class="flex-items sr-class-3 animation">Web Developement</div>
-                    <div class="flex-items sr-class-4 animation">SEO</div>
-                    <div class="flex-items sr-class-5 animation">Social Media makerting</div>
-                    <div class="flex-items sr-class-6 animation">Add more</div>
+                    <div class="flex-items sr-class-1" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">UI Design</div>
+                    <div class="flex-items sr-class-2" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="850">Graphic Design</div>
+                    <div class="flex-items sr-class-3" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">Web Developement</div>
+                    <div class="flex-items sr-class-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">SEO</div>
+                    <div class="flex-items sr-class-5" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="850">Social Media makerting</div>
+                    <div class="flex-items sr-class-6" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">Add more</div>
                 </div>
             </div>
 
             <!-- Projects Section -->
             <div class="project-section">
-                <div class="title">Our Popular Projects</div>
+                <div class="title" data-aos="fade-up" data-aos-duration="2000">Our Popular Projects</div>
                 <div class="flexbox">
-                    <div class="pr-class-1 projects">
+                    <div class="pr-class-1 projects" data-aos="fade-up" data-aos-duration="2000">
                         <div class="text-name">Medlab</div>
                     </div>
-                    <div class="pr-class-2 projects">
+                    <div class="pr-class-2 projects" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">
                         <div class="text-name">Pyro</div>
                     </div>
                 </div>
@@ -114,23 +117,23 @@
     <div class="another-wrap">
 
         <div class="team-section">
-            <div class="title team-title">Creative Team</div>
+            <div class="title team-title" data-aos="fade-up" data-aos-duration="2000">Creative Team</div>
 
             <div class="members">
-                <div class="img-1 img">
+                <div class="img-1 img" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
                     <div class="pop-over">
                         <div class="pop-name">Tanay</div>
                         <div class="pop-stat">Programmer</div>
                     </div>
                 </div>
 
-                <div class="img-2 img">
+                <div class="img-2 img" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
                     <div class="pop-over">
                         <div class="pop-name">Akshay</div>
                         <div class="pop-stat">Developer</div>
                     </div>
                 </div>
-                <div class="img-3 img">
+                <div class="img-3 img" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
                     <div class="pop-over">
                         <div class="pop-name">Sudeep</div>
                         <div class="pop-stat">Graphic Designer</div>
@@ -142,22 +145,26 @@
         <div class="contact-section">
             <div class="container">
                 <div class="contact-title">
-                    <div class="one">Got a project? <br><div class="two">Lets talk!</div></div>
+                    <div class="one" data-aos="fade-up" data-aos-duration="2000">Got a project? <br>
+                        <div class="two" data-aos="fade-up" data-aos-duration="2000">Lets talk!</div>
+                    </div>
                 </div>
                 <div class="form">
-                    <div class="user-name">
+                    <div class="user-name" data-aos="fade-up" data-aos-duration="2000">
                         <label>Your name</label>
                         <input type="text" placeholder="John Doe" required>
                     </div>
-                    <div class="user-email">
+                    <div class="user-email" data-aos="fade-up" data-aos-duration="2000"> 
                         <label>Your fancy email</label>
-                        <input placeholder="johndoe@example.com" type="email" name="email" id="email" required spellcheck="false">
+                        <input placeholder="johndoe@example.com" type="email" name="email" id="email" required
+                            spellcheck="false">
                     </div>
-                    <div class="user-msg">
+                    <div class="user-msg" data-aos="fade-up" data-aos-duration="2000">
                         <label>Your message</label>
-                        <input placeholder="Enter your message here." type="text" name="message" required spellcheck="true">
+                        <input placeholder="Enter your message here." type="text" name="message" required
+                            spellcheck="true">
                     </div>
-                    <div class="send-btn">
+                    <div class="send-btn" data-aos="fade-up" data-aos-duration="2000">
                         <a href="#send">Send</a>
                     </div>
                 </div>
@@ -167,6 +174,13 @@
 
     <!-- Script file -->
     <script src="./script/script.js"></script>
+    <!-- Smooth Scrolling -->
+    <script src="./resources/scrooth-master/src/js/scrooth.js"></script>
+    <script src="./aos/node_modules/aos/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
