@@ -242,8 +242,8 @@ nav {
 }
 
 #wrapper {
-  max-width: 100%;
-  width: 1150px;
+  max-width: 1150px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -457,8 +457,8 @@ nav {
 }
 
 .another-wrap {
+  max-width: 1150px;
   width: 100%;
-  height: auto;
   margin-top: 15em;
 }
 
