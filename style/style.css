@@ -17,9 +17,8 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  overflow-x: hidden;
   background: #4A00E0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -36,18 +35,6 @@ body {
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
-  overflow-y: scroll;
-  padding-right: 17px;
-  /* Increase/decrease this value for cross-browser compatibility */
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-}
-
-.bg-blur {
-  -webkit-filter: blur(20px);
-          filter: blur(20px);
-  -webkit-transition: all 0.6s ease-in-out;
-  transition: all 0.6s ease-in-out;
 }
 
 /* Custom Loader */
@@ -299,8 +286,6 @@ nav {
   -o-object-position: center;
      object-position: center;
   margin: -12px 20px;
-  -webkit-box-shadow: 0 5px 30px #4500d1;
-          box-shadow: 0 5px 30px #4500d1;
 }
 
 .home-img-2 {
@@ -669,7 +654,7 @@ label {
 }
 
 input {
-  width: 100%;
+  width: 80%;
   padding: 1em;
   outline: none;
   background: none;
@@ -700,6 +685,7 @@ input {
   color: #ffffff;
   text-decoration: none;
   font-size: 18px;
+  font-family: "regular";
 }
 
 @media only screen and (max-width: 750px) {
@@ -759,6 +745,144 @@ input {
   }
   .btn .project-btn {
     margin-right: 0em;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .square {
+    width: 60px;
+    height: 60px;
+    margin: -40px -10px;
+  }
+  .home-img-1 {
+    width: 240px;
+    height: 380px;
+    margin: -12px 20px;
+  }
+  .home-img-2 {
+    width: 140px;
+    height: 120px;
+    margin: -60px 150px;
+  }
+  .matter {
+    width: 85vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .matter .text {
+    font-size: 2.2rem;
+  }
+  .btn .project-btn {
+    padding: 0.4em 1.8em 0.4em 1.8em;
+  }
+  .project-btn a {
+    font-size: 12px;
+  }
+  .btn .contact-btn {
+    padding: 0.4em 1.8em 0.4em 1.8em;
+  }
+  .contact-btn a {
+    font-size: 12px;
+  }
+  .title {
+    font-family: "light";
+    font-size: 2em;
+    color: #ffffff;
+  }
+  .flex-items {
+    margin: 2em 1em;
+    width: 90px;
+    height: 30px;
+    padding: 1em 2em;
+    font-size: 13px;
+    font-family: "regular";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .project-section {
+    margin-top: 8em;
+  }
+  .projects {
+    width: 160px;
+    height: 340px;
+    margin: 1em;
+    padding: 1.5em 3em;
+    font-size: 14px;
+  }
+  .another-wrap {
+    margin: 5em 0em;
+  }
+  .contact-section {
+    margin: 2em auto;
+  }
+  .user-name,
+  .user-email,
+  .user-msg,
+  .send-btn {
+    margin: 3em;
+  }
+  label {
+    font-family: "bold";
+    font-size: 16px;
+  }
+  input {
+    width: 70%;
+    padding: 1em;
+    font-size: 14px;
+  }
+  .send-btn {
+    padding: 0.5em;
+    width: 90px;
+  }
+  .send-btn a {
+    font-size: 14px;
+    font-family: "regular";
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .home-header {
+    display: block;
+    width: 100%;
+    margin: 3em auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .header-img {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .square {
+    opacity: 0;
+  }
+  .home-img-1 {
+    width: 100%;
+    height: auto;
+    margin: 0px 0px;
+  }
+  .home-img-2 {
+    width: 70%;
+    height: auto;
+    margin: -50px 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */

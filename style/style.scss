@@ -22,13 +22,13 @@ $sec: #372B47;
 $white: #fff;
 $darken: darken($primary, 3%);
 $darkenBg: darken($primary, 25%);
+
 body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    overflow-x: hidden;
     background: $primary;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 ::selection {
@@ -36,19 +36,10 @@ body {
     color: $accent;
 }
 
-#wrap{
+#wrap {
     max-width: 100%;
     width: 100%;
     margin: 0 auto;
-    
-    overflow-y: scroll;
-    padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
-    box-sizing: content-box;
-}
-
-.bg-blur {
-    filter: blur(20px);
-    transition: all 0.6s ease-in-out;
 }
 
 /* Custom Loader */
@@ -239,7 +230,7 @@ nav {
 // home-section
 .home-section {
     margin-top: 8em;
-    
+
 }
 
 .home-header {
@@ -269,7 +260,6 @@ nav {
     object-fit: cover;
     object-position: center;
     margin: -12px 20px;
-    box-shadow: 0 5px 30px $darken;
 }
 
 .home-img-2 {
@@ -390,6 +380,7 @@ nav {
     justify-content: center;
     border-radius: 4px;
 }
+
 .pr-class-1 {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url(../resources/images/georgia-de-lotz-Ebb8fe-NZtM-unsplash.jpg);
     background-position: center center;
@@ -442,6 +433,7 @@ nav {
     margin: 3em;
     transition: 400ms;
 }
+
 .pop-over {
     padding: 0.6em 1em 0.6em 1em;
     background-color: $accent;
@@ -555,22 +547,26 @@ nav {
     align-items: left;
     text-align: left;
 }
-::placeholder{
+
+::placeholder {
     color: $white;
 }
+
 .user-name,
 .user-email,
 .user-msg,
 .send-btn {
     margin: 3em;
 }
-label{
+
+label {
     font-family: "bold";
     font-size: 20px;
     color: $font-col;
 }
+
 input {
-    width: 100%;
+    width: 80%;
     padding: 1em;
     outline: none;
     background: none;
@@ -597,6 +593,7 @@ input {
     color: $font-col;
     text-decoration: none;
     font-size: 18px;
+    font-family: "regular";
 }
 
 @media only screen and (max-width: 750px) {
@@ -650,5 +647,150 @@ input {
 
     .btn .project-btn {
         margin-right: 0em;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .square {
+        width: 60px;
+        height: 60px;
+        margin: -40px -10px;
+    }
+
+    .home-img-1 {
+        width: 240px;
+        height: 380px;
+        margin: -12px 20px;
+    }
+
+    .home-img-2 {
+        width: 140px;
+        height: 120px;
+        margin: -60px 150px;
+    }
+
+    .matter {
+        width: 85vw;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .matter .text {
+        font-size: 2.2rem;
+    }
+
+    .btn .project-btn {
+        padding: 0.4em 1.8em 0.4em 1.8em;
+    }
+
+    .project-btn a {
+        font-size: 12px;
+    }
+
+    .btn .contact-btn {
+        padding: 0.4em 1.8em 0.4em 1.8em;
+    }
+
+    .contact-btn a {
+        font-size: 12px;
+    }
+
+    .title {
+        font-family: "light";
+        font-size: 2em;
+        color: $font-col;
+    }
+
+    .flex-items {
+        margin: 2em 1em;
+        width: 90px;
+        height: 30px;
+        padding: 1em 2em;
+        font-size: 13px;
+        font-family: "regular";
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .project-section {
+        margin-top: 8em;
+    }
+
+    .projects {
+        width: 160px;
+        height: 340px;
+        margin: 1em;
+        padding: 1.5em 3em;
+        font-size: 14px;
+    }
+
+    .another-wrap {
+        margin: 5em 0em;
+    }
+
+    .contact-section {
+        margin: 2em auto;
+
+    }
+
+    .user-name,
+    .user-email,
+    .user-msg,
+    .send-btn {
+        margin: 3em;
+    }
+
+    label {
+        font-family: "bold";
+        font-size: 16px;
+    }
+
+    input {
+        width: 70%;
+        padding: 1em;
+        font-size: 14px;
+    }
+
+    .send-btn {
+        padding: 0.5em;
+        width: 90px;
+    }
+
+    .send-btn a {
+        font-size: 14px;
+        font-family: "regular";
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    
+    .home-header {
+        display: block;
+        width: 100%;
+        margin: 3em auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .header-img{
+        align-items: center;
+        justify-content: center;
+    }
+    .square {
+        opacity: 0;
+    }
+
+    .home-img-1 {
+        width: 100%;
+        height: auto;
+        margin: 0px 0px;
+    }
+
+    .home-img-2 {
+        width: 70%;
+        height: auto;
+        margin: -50px 0px;
     }
 }
