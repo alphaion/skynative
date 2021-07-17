@@ -31,6 +31,7 @@ $darkenBg: darken($primary, 25%);
 body {
     margin: 0;
     padding: 0;
+    width: 100vw;
     height: 100vh;
     overflow-x: hidden;
 }
@@ -41,8 +42,7 @@ body {
 }
 
 #wrap {
-    max-width: 100%;
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
 }
 
@@ -136,7 +136,7 @@ body {
 .home-header {
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
+    width: 100vw;
     align-items: center;
 }
 
